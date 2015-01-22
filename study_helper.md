@@ -1,8 +1,8 @@
 Study - helper
 ==============
 
-Description
------------
+#Description:
+
 This is a new application I want to work on. The goal is to make studying more effective by providing an easily accessible web interface for my course material. The App hence serves as a library of course material and a study/revision book. I will focus on efficiency by first getting a QA app set up with a comprehensive structure. 
 
 ## Structure:
@@ -22,5 +22,5 @@ Mainly rails 4 ruby gems...
 - While searching, specify some scope like 2015, Computer Science, Operating System
 - Ajax for text prediction
 - View files like power points, word, pdf, .txt. If possible audio and video media(Investigate usage of Youtube to achieve this)
-- Hide or show and anwser
+- Hide or show the answer to the question
 - Add a question without an answer 

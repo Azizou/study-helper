@@ -1,0 +1,21 @@
+h1 Listing solutions
+
+table
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+
+  tbody
+    - @solutions.each do |solution|
+      tr
+        td = solution.name
+        td = link_to 'Show', solution
+        td = link_to 'Edit', edit_solution_path(solution)
+        td = link_to 'Destroy', solution, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Solution', new_solution_path

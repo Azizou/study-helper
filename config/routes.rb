@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  resources :solutions
+
+  resources :questions
+
+  resources :topics
+
+  resources :course_modules
+
+  resources :courses
+
+  resources :years
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

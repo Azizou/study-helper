@@ -1,0 +1,23 @@
+h1 Listing course_modules
+
+table
+  thead
+    tr
+      th Name
+      th Period
+      th
+      th
+      th
+
+  tbody
+    - @course_modules.each do |course_module|
+      tr
+        td = course_module.name
+        td = course_module.period
+        td = link_to 'Show', course_module
+        td = link_to 'Edit', edit_course_module_path(course_module)
+        td = link_to 'Destroy', course_module, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Course module', new_course_module_path

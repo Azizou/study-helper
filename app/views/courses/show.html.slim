@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @course.name
+p
+  strong Year:
+  = @course.year
+p
+  strong Code:
+  = @course.code
+p
+  strong Credits:
+  = @course.credits
+p
+  strong Period:
+  = @course.period
+
+= link_to 'Edit', edit_course_path(@course)
+'|
+= link_to 'Back', courses_path

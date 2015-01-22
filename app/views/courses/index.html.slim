@@ -1,0 +1,29 @@
+h1 Listing courses
+
+table
+  thead
+    tr
+      th Name
+      th Year
+      th Code
+      th Credits
+      th Period
+      th
+      th
+      th
+
+  tbody
+    - @courses.each do |course|
+      tr
+        td = course.name
+        td = course.year
+        td = course.code
+        td = course.credits
+        td = course.period
+        td = link_to 'Show', course
+        td = link_to 'Edit', edit_course_path(course)
+        td = link_to 'Destroy', course, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Course', new_course_path
